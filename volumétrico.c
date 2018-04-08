@@ -1,47 +1,47 @@
-/*	Introdução em Desenvolvimento de Software
+/*	IntroduÃ§Ã£o em Desenvolvimento de Software
 	Professor: Leandro
 	Programador:
 	Ruan	
 	Matheus	
 	Data: 19/03/2018
-Versão: 5.11
+VersÃ£o: 5.11
 */
 
-#include<stdio.h>																//Biblioteca Obrigatoria para a criação do algoritmo
-#include<locale.h>																//Biblioteca para permitir idiomais que contém caracteres especiais
-#include<math.h>																//Biblioteca para incluir funções matemáticas
+#include<stdio.h>												//Biblioteca Obrigatoria para a criaÃ§Ã£o do algoritmo
+#include<locale.h>												//Biblioteca para permitir idiomais que contÃ©m caracteres especiais
+#include<math.h>												//Biblioteca para incluir funÃ§Ãµes matemÃ¡ticas
 
 
-main(){																			// Entrada do Algoritmo
+main(){														// Entrada do Algoritmo
 	
-	setlocale(LC_ALL,"Portuguese");												// Permitindo os caracteres especiais do Portugues-Brasil
+	setlocale(LC_ALL,"Portuguese");										// Permitindo os caracteres especiais do Portugues-Brasil
 	
-	float l_m, l_cc, l_mc,total,l,op_conv;										// Declarando a variavel
+	float l_m, l_cc, l_mc,total,l,op_conv;									// Declarando a variavel
 	
-	printf("Insira o números de Litros que deseja converter: ");
+	printf("Insira o nÃºmeros de Litros que deseja converter: ");
 	scanf("%f", &l);
 	
-	printf("Escolha a conversão que deseja fazer: \n");
+	printf("Escolha a conversÃ£o que deseja fazer: \n");
 	printf("1. Mililitro. \n");
-	printf("2. Centímetro cúbicos. \n");
-	printf("3. Metros cúbicos. \n");
+	printf("2. CentÃ­metro cÃºbicos. \n");
+	printf("3. Metros cÃºbicos. \n");
 	scanf("%f", &op_conv);
 	
 	if(op_conv == 1){
 		l_m = l * 0.0010000;
-		printf("A Conversão para Mililitro de %.0f L é: %.4f ml", l, l_m);
+		printf("A ConversÃ£o para Mililitro de %.0f L Ã©: %.4f ml", l, l_m);
 	}
 		else if(op_conv == 2){
 			l_cc = l / 0.0010000;
-			printf("A Conversão para Centímetro cúbicos de %.0f L é: %.0f cm³", l, l_cc);
+			printf("A ConversÃ£o para CentÃ­metro cÃºbicos de %.0f L Ã©: %.0f cmÂ³", l, l_cc);
 		}
 			else if(op_conv == 3){
 				l_mc = l / 1000.0;
-				printf("A Conversão para Metros cúbicos de %.0f L é: %.4f m³", l, l_mc);
+				printf("A ConversÃ£o para Metros cÃºbicos de %.0f L Ã©: %.4f mÂ³", l, l_mc);
 			}
 				else{
-					printf("Escolha Inválida. Somente de 1 á 3, por favor.");
+					printf("Escolha InvÃ¡lida. Somente de 1 Ã¡ 3, por favor.");
 				}
 	
 	return 0;
-}																					// Fim do algoritmo
+}														// Fim do algoritmo
